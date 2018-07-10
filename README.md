@@ -6,15 +6,15 @@
 
 ### 01 Vue.js소개
 
-> [1주차 - Vue.js란 무엇인가? & Vue.js의 특징](https://github.com/kimhyoyeong/K_hyo/blob/master/vue_study/01_vue.md) 
+> [1주차 - Vue.js란 무엇인가? & Vue.js의 특징](https://github.com/kimhyoyeong/vue.js/blob/master/01/01.md) 
 
 ### 02 개발 환경 설정 및 첫 번째 프로젝트
 
-> [1주차 - 설치하기](https://github.com/kimhyoyeong/K_hyo/blob/master/vue_study/02_vue.md)
+> [1주차 - 설치하기](https://github.com/kimhyoyeong/vue.js/blob/master/01/02..md)
 
 ### 03 화면을 개발하기 위한 필수 단위
 
-> [1주차 - 뷰 인스턴스](https://github.com/kimhyoyeong/K_hyo/blob/master/vue_study/03_vue.md)
+> [1주차 - 뷰 인스턴스](https://github.com/kimhyoyeong/vue.js/blob/master/01/03..md)
 >
 > [2주차 - 뷰 컴포넌트&뷰 컴포넌트 통신](https://github.com/Cho-i/Vue/blob/master/2week/index.md)
 >
