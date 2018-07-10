@@ -1,11 +1,13 @@
-# Vue.js
+# Vue.js 
 
-> [Vue.js 시작하기 전에](https://github.com/leehyemimi/vue.js)
+> https://kr.vuejs.org/
 
 
 
 ### 01 Vue.js소개
 
+> [Vue.js 시작하기](https://github.com/leehyemimi/vue.js)
+>
 > [1주차 - Vue.js란 무엇인가? & Vue.js의 특징](https://github.com/kimhyoyeong/vue.js/blob/master/01/01.md) 
 
 ### 02 개발 환경 설정 및 첫 번째 프로젝트
