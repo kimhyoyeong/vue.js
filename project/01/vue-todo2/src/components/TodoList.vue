@@ -50,7 +50,7 @@
   }
   ul{
       padding-left:0;
-      margin-top:0;
+      margin:0;
       text-align:left;
       list-style-type:none;
   }

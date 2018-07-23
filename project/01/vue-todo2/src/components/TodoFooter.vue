@@ -26,6 +26,7 @@
 .clearAllBtn {
     display: block;
     width:100%;height:100%;
+    margin-top:10px;
     color: #e20303;
     font-size:16px
 }

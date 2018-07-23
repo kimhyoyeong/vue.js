@@ -1,15 +1,12 @@
 <template>
   <div id="app">
     <TodoHeader></TodoHeader>
-    <!-- <TodoList v-bind:propsdate="todoItems" v-on:removeTodo="removeTodo"></TodoList> -->
-    <!-- <TodoFooter v-on:removeAll="removeAll"></TodoFooter> -->
 
     <!-- 라우터 -->
-    <router-view v-bind:propsdate="todoItems" v-on:removeTodo="removeTodo"></router-view>
-
-    <!-- <router-view v-on:addTodo="addTodo"></router-view> -->
+    <router-view v-bind:propsdate="todoItems" v-on:removeTodo="removeTodo" v-on:addTodo="addTodo"></router-view>
     <!--// 라우터 -->
 
+    <!-- <TodoFooter v-on:removeAll="removeAll"></TodoFooter> -->
   </div>
 </template>
 
@@ -37,6 +34,7 @@
       addTodo(todoItem){
         localStorage.setItem(todoItem,todoItem);
         this.todoItems.push(todoItem);
+        this.todoItems.reverse();
       },
       removeTodo(todoItem,index){
         localStorage.removeItem(todoItem,todoItem);
@@ -49,7 +47,6 @@
     },
     components:{
       'TodoHeader':TodoHeader,
-      // 'TodoInput':TodoInput,
       'TodoList':TodoList,
       'TodoView':TodoView,
       'TodoFooter':TodoFooter
