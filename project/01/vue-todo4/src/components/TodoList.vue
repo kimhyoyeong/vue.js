@@ -9,11 +9,11 @@
         <i class="addBtn fa fa-plus" aria-hidden="true"></i> 일정 등록하기
       </router-link>
         <transition-group name="list" tag="ul">
-            <li class="shadow" v-for="(todoItem, index) in propsdata" v-bind:dataIndex="index" v-bind:key="todoItem.id" @click="selTodo(todoItem, index)" v-touch:swipe="sideSwipe" v-bind:class="[{on:index==activeIndex}]">
-              <router-link to="/TodoView">
+            <li class="shadow" v-for="(todoItem, index) in propsdata" v-bind:dataIndex="index" v-bind:key="todoItem.id" v-touch:swipe="sideSwipe" v-bind:class="[{on:index==activeIndex}]">
+              <span class="content" @click="selTodo(todoItem, index)">
                 <i class="checkBtn fas fa-check" aria-hidden="true"></i>
                     {{ todoItem.title }} - {{ todoItem.id }} - {{ todoItem.date }} - {{ todoItem.priority }}
-              </router-link>
+              </span>
               <button type="button" v-on:click="removeTodo(todoItem,index)" class="removeBtn"><i aria-hidden="true" class="far fa-trash-alt"></i></button>
             </li>
         </transition-group>

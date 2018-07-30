@@ -74,6 +74,7 @@ export default {
         selTodo(todoItem, index){
             //alert(0);
             this.selDataId = todoItem.id;
+			this.$router.push('/TodoView/${this.selDataId}');
             console.log(this.selDataId);
         }
     },

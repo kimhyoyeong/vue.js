@@ -17,7 +17,8 @@ const routes = [
   { path: '/', component: TodoList},
   { path: '/TodoInput', component: TodoInput},
   { path: '/TodoFooter', component: TodoFooter},
-  { path: '/TodoView', component: TodoView}
+  { path: '/TodoView/:id', component: TodoView}
+  /*{ path: '/TodoView/:id', component: TodoView}*/
 ]
 
 
