@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 //@import "animation","header","content","footer","mixins";
-@import "animation", "footer", "mixins";
+@import "animation", "mixins";
 
-/* reset */
-body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select{margin:0;padding:0}
+//reset
+body, section, main, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select{margin:0;padding:0}
 body, input, textarea, select, button, table{font-family:'Montserrat', 'Noto Sans', sans-serif;line-height:1.25}
 body{-webkit-text-size-adjust:none}
 img, fieldset{border:0}
@@ -15,17 +15,20 @@ table{border-collapse:collapse;border-spacing:0}
 button{background:none;border:0}
 //::selection{background-color:transparent;color:#000}
 
-/*common*/
-$point-color:#F00;
+//mainColor
 
-/*layout*/
+//layout
+body{
+	overflow:hidden;
+	overflow-y:scroll;
+}
 main{
+	position:relative;
 	width:100vw;
 	height:100vh;
 }
 section{
 	display:table;
-	overflow:hidden;
 	position:relative;
 	width:100vw;
 	min-height:100%;
@@ -35,6 +38,8 @@ section{
 		text-align:center;
 	}
 }
+
+//mediaQuery
 @media (min-width:320px) and (max-width:352px){
 	html{font-size:0.625rem}
 }

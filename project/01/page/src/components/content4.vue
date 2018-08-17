@@ -16,6 +16,7 @@
 				<p v-animate.repeat.fade="'animation'">
 					GTS commissioned us to freshen up all brand materials and redesign their website to better communicate the services available to agencies and job seekers. We designed and developed a website that is not only user-friendly but also visually appealing, with a user experience far beyond what the competition offers.
 				</p>
+				<span class="parallax-item" v-parallax="0.5"><fa prefix="far" icon="faAddressBook"/></span>
 			</div>
 		</section>
 	</main>

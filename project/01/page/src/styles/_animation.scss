@@ -20,10 +20,12 @@
 		background:#B22CFF;
 	}
 }
+
 .color-change-2x{
 	-webkit-animation:color-change-2x 5s linear infinite alternate both;
 	animation:color-change-2x 5s linear infinite alternate both;
 }
+
 //navigationBtn
 @keyframes inM{
 	50%{transform:rotate(0deg);}
@@ -55,7 +57,6 @@
 }
 //textAnimation
 .animate{
-	transition-delay:.1s;
 	transition-duration:.5s;
 	transition-timing-function:cubic-bezier(1.000, 0.025, 0.565, 0.920);
 }
@@ -67,4 +68,36 @@
 .animation.animate-active{
 	opacity:1;
 	transform:scale(1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateY(0);
+}
+.animation-fade{
+	opacity:0;
+}
+.animation-fade.animate-active{
+	opacity:1;
+}
+
+//transition
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity .5s ease;
+}
+.fade-enter,
+.fade-leave-active {
+	opacity: 0
+}
+.child-view {
+	position: absolute;
+	transition: all .5s cubic-bezier(.55,0,.1,1);
+}
+.slide-left-enter,
+.slide-right-leave-active {
+	opacity: 0;
+	-webkit-transform: translate(30px, 0);
+	transform: translate(30px, 0);
+}
+.slide-left-leave-active,
+.slide-right-enter {
+	opacity: 0;
+	-webkit-transform: translate(-30px, 0);
+	transform: translate(-30px, 0);
 }

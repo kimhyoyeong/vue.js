@@ -6,6 +6,7 @@
 	-moz-animation:($attr);
 	-o-animation:($attr);
 }
+
 @mixin rotate($degree) {
 	transform:rotate($degree);
 	-webkit-transform:rotate($degree);

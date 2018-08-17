@@ -1,27 +1,35 @@
 <template>
   <div id="app">
-    <Header2></Header2>
-    <router-view></router-view>
+    <Header></Header>
+    <transition name="fade" mode="out-in">
+     <router-view class="view"></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
-import Header2 from './components/header2.vue'
-import Content3 from './components/content3.vue'
-import Content4 from './components/content4.vue'
+import Header from './components/header.vue'
+import Home from './components/home.vue'
+import About from './components/about.vue'
+import Project from './components/project.vue'
 import Footer from './components/footer.vue'
 
 export default {
 	components: {
-		'Header2': Header2,
-		'Content3': Content3,
-		'Content4': Content4,
+		'Header': Header,
+		'Home': Home,
+		'About': About,
+		'Project': Project,
 		'Footer': Footer,
-	}
+	},
+	beforeRouteUpdate (to, from, next) {
+		const toDepth = to.path.split('/').length
+		const fromDepth = from.path.split('/').length
+		this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
+		next()
+	},
 }
 </script>
-
-
 
 <style lang="scss" src="./styles/common.scss"></style>
 

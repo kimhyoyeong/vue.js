@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import fontawesome from 'fontawesome-vue'
+
 import VueAnimate from 'vue-animate-scroll'
 import VueParallaxJs from 'vue-parallax-js'
-import fontawesome from 'fontawesome-vue';
 
-require('notosans-fontface');
-require('typeface-montserrat');
+import 'notosans-fontface'
+import 'typeface-montserrat'
 
 Vue.config.productionTip = false
 Vue.use(VueAnimate)
@@ -16,13 +17,15 @@ Vue.use(VueRouter)
 
 
 // 라우트 컴포넌트 정의
-const home = App.components.Content3
-const content = App.components.Content4
+const home = App.components.Home
+const About = App.components.About
+const Project = App.components.Project
 
 // 라우트 정의
 const routes = [
 	{path: '/', component: home},
-	{path: '/content', component: content}
+	{path: '/About', component: About},
+	{path: '/Project', component: Project}
 ]
 
 // 라우터 인스턴스 생성
