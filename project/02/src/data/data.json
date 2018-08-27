@@ -1,0 +1,46 @@
+{
+  "projects": [
+	{
+	  "id": 0,
+	  "project": "PROJECT #1",
+	  "title": "Hackers HRD",
+	  "des": "Betches has become the voice of millennial <br>females—a voice that asks, “Is vodka a carb”? <br>Having experienced phenomenal growth, <br>Betches needed a scalable platform with an adept team to maintain",
+	  "role": "Web Publisher(80%)",
+	  "date": "2016.03~2016.10",
+	  "ie": "IE7+",
+	  "imgSrc": "//gscdn.hackers.co.kr/champ/img/event/2011/img/hrd_main_2015.jpg",
+	  "alt": "이미지설명",
+	  "pc": "http://champ.hackers.com/",
+	  "mobile": "http://m.champ.hackers.com/",
+	  "codeLink": ""
+	},
+	{
+	  "id": 1,
+	  "project": "PROJECT #2",
+	  "title": "Hackers PREP",
+	  "des": "Betches has become the voice of millennial females—a voice that asks, “Is vodka a carb”? Having experienced phenomenal growth, Betches needed a scalable platform with an adept team to maintain",
+	  "role": "Web Publisher(80%)",
+	  "date": "2016.03~2016.10",
+	  "ie": "IE7+",
+	  "imgSrc": "//gscdn.hackers.co.kr/champ/img/event/2011/img/prep_main_2017.jpg",
+	  "alt": "이미지설명",
+	  "pc": "http://champ.hackers.com/",
+	  "mobile": "http://m.champ.hackers.com/",
+	  "codeLink": ""
+	}
+  ],
+  "category": [
+	"id",
+	"project",
+	"title",
+	"des",
+	"role",
+	"date",
+	"ie",
+	"imgSrc",
+	"alt",
+	"pc",
+	"mobile",
+	"codeLink"
+  ]
+}
