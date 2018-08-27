@@ -3,7 +3,7 @@
 		
 		<button class="menu-btn" v-on:click="isActive = !isActive" v-if="$route.path === '/' || $route.path === '/Project' || $route.path === '/About'"><i></i><i></i><i></i></button>
 		
-		<span class="home-btn" v-on:click.native="[isActive ? isActive = !isActive : isActive]" v-if="$route.path === '/' || $route.path === '/Project' || $route.path === '/About'"><router-link to="/" ><i class="fas fa-home"></i></router-link></span>
+		<span class="home-btn" v-if="$route.path === '/' || $route.path === '/Project' || $route.path === '/About'"><router-link to="/" v-on:click.native="[isActive ? isActive = !isActive : isActive]"><i class="fas fa-home"></i></router-link></span>
 		
 		<nav>
 			<ul>

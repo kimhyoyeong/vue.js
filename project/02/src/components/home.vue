@@ -7,10 +7,8 @@
 				<h2 class="main-title tracking-in-contract-bck-top">Portfolio</h2>
 				<div class="description fade-in-bottom">
 					<p>
-						Yard is a creative house powered by people embracing current culture <br>
-						- whatever shape or form: music, fashion, art, sport.<br>
-						Through a sophisticated understanding of the urban target, <br>
-						we collaborate with brands living in the now and ready to earn their territory in the cultural marketplace.
+						안녕하세요. Front-End Developer 김효영입니다.<br>
+						포트폴리오 사이트에 방문해주셔서 감사합니다.
 					</p>
 				</div>
 				<div class="button-box">
@@ -23,6 +21,15 @@
 </template>
 
 <style lang="scss" scoped>
+	section{
+		.inner-content{
+			width:100%;
+			text-align:center;
+		}
+	}
+	.main-title{
+		font-size:4.5rem;
+	}
 	.button-box{
 		.button{
 			margin:0 .3rem;

@@ -18,8 +18,12 @@ button{background:none;border:0}
 //mainColor
 
 //layout
+main{
+	height:100vh;
+}
 section{
 	display:table;
+	table-layout:fixed;
 	overflow:hidden;
 	position:relative;
 	width:100%;
@@ -29,14 +33,16 @@ section{
 	.inner-content{
 		display:table-cell;
 		position:relative;z-index:2;
+		padding:5%;
 		vertical-align:middle;
-		text-align:center;
+		text-align:left;
+		box-sizing:border-box;
 	}
 }
 
 //main
 .back-text{
-	position:absolute;left:0;bottom:0;
+	position:absolute;right:0;bottom:0;
 	animation:backTitleAni 5s infinite;
 	animation-direction:alternate;
 	font-size:14rem;color:#FEFEFE;font-weight:800;
@@ -48,7 +54,7 @@ section{
 }
 .main-title{
 	position:relative;
-	font-size:5rem;
+	font-size:3.6rem;
 	white-space:nowrap;
 	span{
 		color:#D6372E;
@@ -63,16 +69,16 @@ section{
 	}
 }
 .sub-title{
-	font-size:.5rem;
+	font-size:12px;
 	letter-spacing:.2rem;
 }
 .description{
-	font-size:.7rem;
+	font-size:16px;
 	line-height:1.5;
 	dt{
 		padding-right:.3rem;
 		color:#888;
-		font-size:.5rem;
+		font-size:12px;
 	}
 }
 .info-list{
@@ -98,7 +104,7 @@ section{
 		padding:.5rem 1rem;
 		box-sizing:border-box;
 		border:1px solid #000;
-		font-size:.6rem;font-weight:700;text-align:center;color:#000;
+		font-size:15px;font-weight:700;text-align:center;color:#000;
 		transition:color .5s;
 		&:before{
 			content:'';
@@ -130,19 +136,19 @@ section{
 }
 
 //mediaQuery
-@media (min-width:320px) and (max-width:384px){
-	html{font-size:0.6875rem}
-}
-@media (min-width:385px) and (max-width:416px){
-	html{font-size:0.75rem}
-}
-@media (min-width:417px) and (max-width:448px){
-	html{font-size:0.8125rem}
-}
-@media (min-width:449px) and (max-width:480px){
-	html{font-size:0.875rem}
-}
-@media (min-width:481px) and (max-width:512px){
+//@media (min-width:320px) and (max-width:384px){
+//	html{font-size:0.6875rem}
+//}
+//@media (min-width:385px) and (max-width:416px){
+//	html{font-size:0.75rem}
+//}
+//@media (min-width:417px) and (max-width:448px){
+//	html{font-size:0.8125rem}
+//}
+//@media (min-width:449px) and (max-width:480px){
+//	html{font-size:0.875rem}
+//}
+@media (min-width:320px) and (max-width:512px){
 	html{font-size:0.9375rem}
 }
 @media (min-width:513px) and (max-width:544px){
@@ -187,7 +193,9 @@ section{
 
 
 @media (min-width:320px) and (max-width:823px){
-	.back-text{
-		right:0;left:auto;
+	section{
+		.inner-content{
+			padding:24% 7%;
+		}
 	}
 }

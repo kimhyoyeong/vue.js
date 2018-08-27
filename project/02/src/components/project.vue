@@ -3,10 +3,10 @@
 		<section>
 			<div class="inner-content">
 				<strong class="sub-title">MY EXPERIENCE</strong>
-				<h2 class="main-title tracking-in-contract-bck-top">Project</h2>
+				<h2 class="main-title fade-in-bottom">Project</h2>
 				<div class="description fade-in-bottom">
 					<p>
-						89명의 남측 이산가족과 동반 가족 등 197명은 금강산 온정각에서<br> 점심을 먹고 숙소인 금강산호텔과 외금강호텔에 <br>
+						신규프로젝트 진행시 메인/서브 역할로 진행하였습니다.
 					</p>
 				</div>
 				<div class="button-box">
@@ -33,14 +33,9 @@
 </template>
 
 <style lang="scss" scoped>
-	section{
-		.inner-content{
-			padding:5%;
-			box-sizing:border-box;
-			text-align:left;
-		}
+	.main-title{
+		margin-bottom:.2rem;
 	}
-	
 	.project-list{
 		margin-top:1rem;
 		animation:fade-in-bottom 1s;
@@ -101,11 +96,6 @@
 	}
 	
 	@media (min-width:320px) and (max-width:1023px){
-		section{
-			.inner-content{
-				padding:60px 20px;
-			}
-		}
 		.project-list{
 			li{
 				width:48%;
