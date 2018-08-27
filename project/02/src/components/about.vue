@@ -19,8 +19,8 @@
 						<dd>1989.04.05</dd>
 					</dl>
 					<dl class="info-list">
-						<dt>Certificate</dt>
-						<dd>정보처리기사<br>컴활2급<br>사무자동화산업기사<br>멀티미디어콘텐츠전문가<br>웹디자인기능사</dd>
+						<dt>Career</dt>
+						<dd>[2015.09.16 ~ 현재] 해커스교육그룹</dd>
 					</dl>
 					<dl class="info-list">
 						<dt>Education</dt>
@@ -30,8 +30,8 @@
 						</dd>
 					</dl>
 					<dl class="info-list">
-						<dt>Career</dt>
-						<dd>[2015.09.16 ~ 현재] 해커스교육그룹</dd>
+						<dt>Certificate</dt>
+						<dd>정보처리기사<br>컴활2급<br>사무자동화산업기사<br>멀티미디어콘텐츠전문가<br>웹디자인기능사</dd>
 					</dl>
 				</div>
 				
