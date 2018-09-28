@@ -3,7 +3,6 @@
 header{
 	position:fixed;left:0;right:0;z-index:30;
 	padding:20px;
-
 	.home-btn{
 		position:relative;
 		float:right;
@@ -59,7 +58,7 @@ nav{
 	li{
 		display:block;
 		padding:2% 2% 2% 5%;
-		color:#000;font-size:4rem;font-weight:800;text-align:left;
+		color:#000;font-size:3.6rem;font-weight:800;text-align:left;
 		animation-name:rotate-txt;animation-duration:1s;animation-fill-mode:both;
 		&:nth-child(1){
 			animation-delay:.4s;

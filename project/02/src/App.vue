@@ -4,7 +4,6 @@
     <transition name="fade" mode="out-in">
       <router-view class="view" v-bind:propsdata="projectList, selectedItem" @viewPage="viewPage"></router-view>
     </transition>
-    <Footer></Footer>
   </div>
 </template>
 

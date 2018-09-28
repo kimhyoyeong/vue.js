@@ -55,7 +55,7 @@
 			overflow:hidden;
 			position:relative;
 			box-shadow:0 20px 40px rgba(0, 0, 0, 0.2);
-			height:18rem;
+			height:15rem;
 			img{
 				display:block;
 				width:100%;
