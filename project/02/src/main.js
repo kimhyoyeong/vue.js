@@ -24,11 +24,21 @@ const routes = [
 // 라우터 인스턴스 생성
 const router = new VueRouter({
 	mode: 'history', // history 모드를 사용하면 주소창에 hash가 없어집니다.
-	routes // routes: routes 의 약어
-})
-
+	routes, // routes: routes 의 약어
+	scrollBehavior (ProjectView, Project, savedPosition) {
+		return new Promise((resolve) => {
+			setTimeout(() => {
+				if(savedPosition){
+					resolve({ x: savedPosition, y: savedPosition })
+				}else{
+					resolve({ x: 0, y: 0 })
+				}
+			}, 500)
+		})
+	}
+});
 
 new Vue({
 	render: h => h(App),
 	router
-}).$mount('#app')
+}).$mount('#app');
