@@ -15,7 +15,7 @@
 		
 		<!--<router-link to="/Project" class="back-btn" v-if="$route.path !== '/' && $route.path !== '/Project' && $route.path !== '/About'"><i class="fas fa-arrow-left"></i></router-link>-->
 		
-		<a href="#" @click="$router.go(-1)" class="back-btn" v-if="$route.path !== '/' && $route.path !== '/Project' && $route.path !== '/About'"><i class="fas fa-arrow-left"></i></a>
+		<span @click="$router.go(-1)" class="back-btn" v-if="$route.path !== '/' && $route.path !== '/Project' && $route.path !== '/About'"><i class="fas fa-arrow-left"></i></span>
 		
 	</header>
 </template>

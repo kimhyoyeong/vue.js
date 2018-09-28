@@ -9,9 +9,11 @@ header{
 		font-size:28px;
 	}
 
-	.back-btn{position:relative;
+	.back-btn{
+		position:relative;
 		float:left;
 		font-size:28px;
+		cursor:pointer;
 	}
 
 	&:before{
@@ -88,7 +90,7 @@ nav{
 	float:left;
 	width:30px;height:25px;
 	font-size:20px;font-weight:700;
-
+	cursor:pointer;
 	i{
 		position:relative;z-index:1;
 		content:'';
