@@ -4,7 +4,7 @@
 
 //reset
 body, section, main, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select{margin:0;padding:0}
-body, input, textarea, select, button, table{font-family:'Montserrat', 'Noto Sans', sans-serif;line-height:1.25}
+body, input, textarea, select, button, table{font-family:'Montserrat', sans-serif;line-height:1.25}
 body{-webkit-text-size-adjust:none}
 img, fieldset{border:0}
 ul, ol{list-style:none}
@@ -73,6 +73,9 @@ section{
 	letter-spacing:.2rem;
 }
 .description{
+	p{
+		margin-bottom:1rem;
+	}
 	font-size:16px;
 	line-height:1.5;
 	dt{
@@ -81,19 +84,6 @@ section{
 		font-size:12px;
 	}
 }
-.info-list{
-	display:table;
-	margin-bottom:.1rem;
-	dt,dd{
-		display:table-cell;
-		text-align:left;
-		vertical-align:middle;
-	}
-	dd{
-		padding-right:1rem;
-	}
-}
-
 .button-box{
 	margin-top:1rem;
 	.button{
@@ -198,4 +188,5 @@ section{
 			padding:24% 7%;
 		}
 	}
+
 }

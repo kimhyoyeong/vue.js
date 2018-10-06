@@ -2,9 +2,8 @@
   "projects": [
 	{
 	  "id": 0,
-	  "project": "PROJECT #1",
-	  "title": "Hackers HRD",
-	  "des": "Betches has become the voice of millennial <br>females—a voice that asks, “Is vodka a carb”? <br>Having experienced phenomenal growth, <br>Betches needed a scalable platform with an adept team to maintain",
+	  "title": "해커스 HRD 2015",
+	  "des": "입사 후 처음으로 맡은 신규페이지입니다. ",
 	  "role": "Web Publisher(90%)",
 	  "date": "2016.03~2016.10",
 	  "ie": "IE7+",
@@ -12,13 +11,12 @@
 	  "alt": "이미지설명",
 	  "pc": "http://champ.hackers.com/",
 	  "mobile": "http://m.champ.hackers.com/",
-	  "codeLink": ""
+	  "codeLink": "http://m.champ.hackers.com/"
 	},
 	{
 	  "id": 1,
-	  "project": "PROJECT #2",
-	  "title": "Hackers PREP",
-	  "des": "Betches has become the voice of millennial females—a voice that asks, “Is vodka a carb”? Having experienced phenomenal growth, Betches needed a scalable platform with an adept team to maintain",
+	  "title": "해커스 중국어",
+	  "des": "Betches has become the voice of millennial females—a voice that asks, “Is vodka a carb”? Having experienced phenomenal growth, Betches needed a scalable platform with an adept team to maintainBetches has become the voice of millennial females—a voice that asks, “Is vodka a carb”? Having experienced phenomenal growth, Betches needed a scalable platform with an adept team to maintainBetches has become the voice of millennial females—a voice that asks, “Is vodka a carb”? Having experienced phenomenal growth, Betches needed a scalable platform with an adept team to maintain",
 	  "role": "Web Publisher(100%)",
 	  "date": "2016.03~2016.10",
 	  "ie": "IE7+",
@@ -30,8 +28,7 @@
 	},
 	{
 	  "id": 2,
-	  "project": "PROJECT #2",
-	  "title": "Hackers PREP",
+	  "title": "해커스 경영 아카데미",
 	  "des": "Betches has become the voice of millennial females—a voice that asks, “Is vodka a carb”? Having experienced phenomenal growth, Betches needed a scalable platform with an adept team to maintain",
 	  "role": "Web Publisher(100%)",
 	  "date": "2016.03~2016.10",
@@ -44,8 +41,7 @@
 	},
 	{
 	  "id": 3,
-	  "project": "PROJECT #2",
-	  "title": "Hackers PREP",
+	  "title": "해커스닷컴 영문사이트",
 	  "des": "Betches has become the voice of millennial females—a voice that asks, “Is vodka a carb”? Having experienced phenomenal growth, Betches needed a scalable platform with an adept team to maintain",
 	  "role": "Web Publisher(100%)",
 	  "date": "2016.03~2016.10",
@@ -58,7 +54,6 @@
 	},
 	{
 	  "id": 4,
-	  "project": "PROJECT #2",
 	  "title": "Hackers PREP",
 	  "des": "Betches has become the voice of millennial females—a voice that asks, “Is vodka a carb”? Having experienced phenomenal growth, Betches needed a scalable platform with an adept team to maintain",
 	  "role": "Web Publisher(100%)",
@@ -72,7 +67,6 @@
 	},
 	{
 	  "id": 5,
-	  "project": "PROJECT #2",
 	  "title": "Hackers PREP",
 	  "des": "Betches has become the voice of millennial females—a voice that asks, “Is vodka a carb”? Having experienced phenomenal growth, Betches needed a scalable platform with an adept team to maintain",
 	  "role": "Web Publisher(100%)",
@@ -86,7 +80,6 @@
 	},
 	{
 	  "id": 6,
-	  "project": "PROJECT #2",
 	  "title": "Hackers PREP",
 	  "des": "Betches has become the voice of millennial females—a voice that asks, “Is vodka a carb”? Having experienced phenomenal growth, Betches needed a scalable platform with an adept team to maintain",
 	  "role": "Web Publisher(100%)",
@@ -100,7 +93,6 @@
 	},
 	{
 	  "id": 7,
-	  "project": "PROJECT #2",
 	  "title": "Hackers PREP",
 	  "des": "Betches has become the voice of millennial females—a voice that asks, “Is vodka a carb”? Having experienced phenomenal growth, Betches needed a scalable platform with an adept team to maintain",
 	  "role": "Web Publisher(100%)",
@@ -114,7 +106,6 @@
 	},
 	{
 	  "id": 8,
-	  "project": "PROJECT #2",
 	  "title": "Hackers PREP",
 	  "des": "Betches has become the voice of millennial females—a voice that asks, “Is vodka a carb”? Having experienced phenomenal growth, Betches needed a scalable platform with an adept team to maintain",
 	  "role": "Web Publisher(100%)",
@@ -129,7 +120,6 @@
   ],
   "category": [
 	"id",
-	"project",
 	"title",
 	"des",
 	"role",

@@ -2,7 +2,7 @@
   <div id="app">
     <Header></Header>
     <transition name="fade" mode="out-in">
-      <router-view class="view" v-bind:propsdata="projectList, selectedItem" @viewPage="viewPage"></router-view>
+      <router-view class="view" v-bind:propsdata="projectList, selectedItem" @viewPage="viewPage" @viewPageNext="viewPageNext" @viewPagePrev="viewPagePrev"></router-view>
     </transition>
   </div>
 </template>
@@ -27,6 +27,18 @@ export default {
 		viewPage(project){
 			this.selectedItem = project.id;
 			this.$router.push('/ProjectView/${this.selectedItem}');
+		},
+		viewPageNext(){
+			if(this.selectedItem < this.projectList.length-1){
+				this.selectedItem = this.selectedItem+1;
+				this.$router.push('/ProjectView/${this.selectedItem}');
+            }
+		},
+		viewPagePrev(){
+			if(this.selectedItem > 0){
+				this.selectedItem = this.selectedItem-1;
+				this.$router.push('/ProjectView/${this.selectedItem}');
+			}
 		}
 	},
 	components: {

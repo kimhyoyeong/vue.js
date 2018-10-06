@@ -51,16 +51,23 @@
 </template>
 
 <style lang="scss" scoped>
-	.description{
-		p{
-			margin-bottom:1rem;
+	.info-list{
+		display:table;
+		margin-bottom:.3rem;
+		dt,dd{
+			display:table-cell;
+			text-align:left;
+			vertical-align:top;
 		}
-		.info-list{
-			margin-bottom:.3rem;
-			dt{min-width:100px}
-			dt,dd{vertical-align:top}
+		dt{
+			min-width:100px
+		}
+		dd{
+			padding-right:1rem;
+			vertical-align:top;
 		}
 	}
+	
 	.parallax-item{
 		position:absolute;top:0;right:35%;
 		font-size:10rem;

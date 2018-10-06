@@ -6,7 +6,8 @@
 				<h2 class="main-title fade-in-bottom">Project</h2>
 				<div class="description fade-in-bottom">
 					<p>
-						신규프로젝트 진행시 메인/서브 역할로 진행하였습니다.
+						신규프로젝트 진행시 메인/서브 역할로 진행하였습니다. <br>
+						클릭시 자세한 내용을 확인할 수 있습니다.
 					</p>
 				</div>
 				<div class="button-box">
@@ -14,15 +15,15 @@
 				</div>
 				<div class="project-list">
 					<ul>
-						<li v-for="(project, index) in propsdata" v-bind:key="project.id">
-							<a href="#" @click.prevent="viewPage(project, index)">
+						<li v-for="(project) in propsdata" v-bind:key="project.id">
+							<a href="#" @click.prevent="viewPage(project)">
 								<div class="txt-box">
-									{{ project.project }} <strong>{{ project.title }}</strong>
+									{{project.date}} <strong>{{ project.title }}</strong>
+									<span class="more">자세히보기</span>
 								</div>
 								<div class="img-box">
 									<img v-bind:src="project.imgSrc" v-bind:alt="project.alt">
 								</div>
-								
 							</a>
 						</li>
 					</ul>
@@ -49,48 +50,53 @@
 			&:nth-child(4n){
 				margin-right:0;
 			}
+			a{
+				&:hover .img-box img{
+					transform:scale(1);
+					transition:transform .5s;
+				}
+			}
 		}
 		
 		.img-box{
 			overflow:hidden;
 			position:relative;
 			box-shadow:0 20px 40px rgba(0, 0, 0, 0.2);
-			height:15rem;
+			height:10rem;
 			img{
 				display:block;
 				width:100%;
 				transform:scale(1.2);
 				transition:transform .5s;
 			}
-			&.active img, &:hover img{
-				transform:scale(1);
-				transition:transform .5s;
-			}
+			
 			&:after{
 				content:'';
 				position:absolute;top:0;left:0;right:0;bottom:0;z-index:2;
-				background:#000;opacity:0.5;
-				transition:all .5s;
+				background:#000;opacity:0.6;
 			}
-			&.active:after, &:hover:after{
-				opacity:0;
-				transition:all .5s;
-			}
+			
 		}
 		
 		.txt-box{
 			position:absolute;top:50%;left:0;right:0;z-index:5;
 			transform:translateY(-50%);
 			padding:.2rem;
-			background-color:rgba(0, 0, 0, .8);
 			color:#fff;
 			text-align:center;
 			font-size:.6rem;
-			
+			letter-spacing:-1px;
 			strong{
 				display:block;
 				font-size:.75rem;
 				font-weight:600;
+			}
+			.more{
+				display:inline-block;
+				margin-top:5px;
+				padding:.1rem .2rem;
+				border:1px solid #fff;
+				font-size:.5rem;
 			}
 		}
 	}
@@ -100,12 +106,21 @@
 			li{
 				width:48%;
 			}
+			.txt-box{
+				font-size:12px;
+				strong{
+					font-size:16px;
+				}
+				.more{
+					font-size:12px;
+				}
+			}
 		}
+		
 	}
 </style>
 
 <script>
-
 export default {
 	props: ['propsdata', 'selectedItem'],
 	

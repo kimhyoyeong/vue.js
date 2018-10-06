@@ -7,7 +7,8 @@
 				<h2 class="main-title tracking-in-contract-bck-top">Portfolio</h2>
 				<div class="description fade-in-bottom">
 					<p>
-						안녕하세요. Front-End Developer 김효영입니다.<br>
+						안녕하세요:)<br>
+						웹퍼블리셔 김효영입니다.<br>
 						포트폴리오 사이트에 방문해주셔서 감사합니다.
 					</p>
 				</div>
