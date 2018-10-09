@@ -23,7 +23,7 @@ header{
 		width:250vw;height:auto;padding-top:250vw;
 		transform:scale(0, 0) translate(-50%, -50%);
 		transform-origin:-100% 0;
-		background:#D6372E;border-radius:50%;
+		background:$pointColor;border-radius:50%;
 		transition:all 1s cubic-bezier(0.77, 0, 0.175, 1);
 	}
 

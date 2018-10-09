@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+$pointColor:#D6372E;
+
 @import  "animation", "header";
 
 //reset
@@ -13,9 +15,8 @@ a{color:#000;text-decoration:none}
 table{border-collapse:collapse;border-spacing:0}
 button{background:none;border:0}
 ::selection{
-	color:#D6372E
+	color:$pointColor
 }
-//mainColor
 
 //layout
 main{
@@ -42,10 +43,10 @@ section{
 
 //main
 .back-text{
-	position:absolute;right:0;bottom:0;
+	position:fixed;right:0;bottom:0;
 	animation:backTitleAni 5s infinite;
 	animation-direction:alternate;
-	font-size:14rem;color:#FEFEFE;font-weight:800;
+	font-size:13rem;color:#FEFEFE;font-weight:800;
 
 	&:after{
 		content:'.';
@@ -73,11 +74,11 @@ section{
 	letter-spacing:.2rem;
 }
 .description{
+	font-size:16px;
+	line-height:1.5;
 	p{
 		margin-bottom:1rem;
 	}
-	font-size:16px;
-	line-height:1.5;
 	dt{
 		padding-right:.3rem;
 		color:#888;
@@ -126,19 +127,10 @@ section{
 }
 
 //mediaQuery
-//@media (min-width:320px) and (max-width:384px){
-//	html{font-size:0.6875rem}
-//}
-//@media (min-width:385px) and (max-width:416px){
-//	html{font-size:0.75rem}
-//}
-//@media (min-width:417px) and (max-width:448px){
-//	html{font-size:0.8125rem}
-//}
-//@media (min-width:449px) and (max-width:480px){
-//	html{font-size:0.875rem}
-//}
-@media (min-width:320px) and (max-width:512px){
+@media (min-width:320px) and (max-width:374px){
+	html{font-size:0.75rem}
+}
+@media (min-width:375px) and (max-width:512px){
 	html{font-size:0.9375rem}
 }
 @media (min-width:513px) and (max-width:544px){
@@ -185,7 +177,7 @@ section{
 @media (min-width:320px) and (max-width:823px){
 	section{
 		.inner-content{
-			padding:24% 7%;
+			padding:74px 7%;
 		}
 	}
 

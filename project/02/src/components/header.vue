@@ -8,8 +8,8 @@
 		<nav>
 			<ul>
 				<li><router-link v-on:click.native="isActive = !isActive" to="/">HOME.</router-link></li>
-				<li><router-link v-on:click.native="isActive = !isActive" to="Project">Project.</router-link></li>
-				<li><router-link v-on:click.native="isActive = !isActive" to="About">About.</router-link></li>
+				<li><router-link v-on:click.native="isActive = !isActive" to="/Project">Project.</router-link></li>
+				<li><router-link v-on:click.native="isActive = !isActive" to="/About">About.</router-link></li>
 			</ul>
 		</nav>
 		

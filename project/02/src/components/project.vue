@@ -17,6 +17,7 @@
 					<ul>
 						<li v-for="(project) in propsdata" v-bind:key="project.id">
 							<a href="#" @click.prevent="viewPage(project)">
+								<i class="icon-new" v-if="project.id <= 2">NEW</i>
 								<div class="txt-box">
 									{{project.date}} <strong>{{ project.title }}</strong>
 									<span class="more">자세히보기</span>
@@ -51,8 +52,14 @@
 				margin-right:0;
 			}
 			a{
+				display:block;
+				transition:transform .5s;
 				&:hover .img-box img{
 					transform:scale(1);
+					transition:transform .5s;
+				}
+				&:hover{
+					transform:translateY(-20px);
 					transition:transform .5s;
 				}
 			}
@@ -61,7 +68,7 @@
 		.img-box{
 			overflow:hidden;
 			position:relative;
-			box-shadow:0 20px 40px rgba(0, 0, 0, 0.2);
+			box-shadow:0 20px 40px rgba(0, 0, 0, 0.3);
 			height:10rem;
 			img{
 				display:block;
@@ -100,7 +107,20 @@
 			}
 		}
 	}
-	
+
+	.icon-new{
+		position:absolute;top:0;left:0;z-index:10;
+		display:block;
+		height:20px;
+		padding:0 5px;
+		background:#c12535;
+		font:{
+			size:12px;
+			style:normal;
+		}
+		color:#fff;
+		line-height:20px;
+	}
 	@media (min-width:320px) and (max-width:1023px){
 		.project-list{
 			li{

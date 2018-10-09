@@ -60,7 +60,7 @@
 			vertical-align:top;
 		}
 		dt{
-			min-width:100px
+			min-width:80px
 		}
 		dd{
 			padding-right:1rem;
