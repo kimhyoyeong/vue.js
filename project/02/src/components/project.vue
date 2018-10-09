@@ -125,6 +125,9 @@
 		.project-list{
 			li{
 				width:48%;
+				a:hover{
+					transform:translateY(0);
+				}
 			}
 			.txt-box{
 				font-size:12px;
