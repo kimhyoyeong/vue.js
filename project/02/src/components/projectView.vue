@@ -15,7 +15,7 @@
 						<li v-if="this.propsdata[this.selectedItem].cssSkill!=''"><i class="icon-css">CSS</i></li>
 						<li v-if="this.propsdata[this.selectedItem].sassSkill!=''"><i class="icon-sass">Sass</i></li>
 						<li v-if="this.propsdata[this.selectedItem].jquerySkill!=''"><i class="icon-jquery">jquery</i></li>
-						<li v-if="this.propsdata[this.selectedItem].vueSkill!=''"><i class="icon-jquery">Vue.js</i></li>
+						<li v-if="this.propsdata[this.selectedItem].vueSkill!=''"><i class="icon-vue">Vue.js</i></li>
 					</ul>
 					
 					<div class="description">
@@ -176,7 +176,7 @@
 			background-color:#108040;
 		}
 		.icon-vue{
-			background-color:#44bb88;
+			background-color:#4fc08d;
 		}
 	}
 	
