@@ -146,40 +146,6 @@
 		}
 	}
 	
-	.list-skills{
-		margin-bottom:10px;
-		li{
-			display:inline-block;
-			margin-right:5px;
-			vertical-align:middle;
-		}
-		[class^='icon-']{
-			display:block;
-			height:20px;
-			padding:0 5px;
-			background:#ee5522;
-			border-radius:4px;
-			font:{
-				size:12px;
-				style:normal;
-			}
-			color:#fff;
-			line-height:20px;
-		}
-		.icon-css{
-			background-color:#0077dd;
-		}
-		.icon-sass{
-			background-color:#cc6699;
-		}
-		.icon-jquery{
-			background-color:#108040;
-		}
-		.icon-vue{
-			background-color:#4fc08d;
-		}
-	}
-	
 	@media (min-width:320px) and (max-width:823px){
 		
 		.project-view{

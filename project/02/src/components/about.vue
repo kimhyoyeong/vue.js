@@ -32,6 +32,18 @@
 						<dt>Certificate</dt>
 						<dd>정보처리기사<br>컴활2급<br>사무자동화산업기사<br>멀티미디어콘텐츠전문가<br>웹디자인기능사</dd>
 					</dl>
+					<dl class="info-list">
+						<dt>skills</dt>
+						<dd>
+							<ul class="list-skills">
+								<li><i class="icon-html">HTML</i></li>
+								<li><i class="icon-css">CSS</i></li>
+								<li><i class="icon-sass">Sass</i></li>
+								<li><i class="icon-jquery">jquery</i></li>
+								<li><i class="icon-vue">Vue.js</i></li>
+							</ul>
+						</dd>
+					</dl>
 				</div>
 				
 				<div class="link-box fade-in-bottom">
