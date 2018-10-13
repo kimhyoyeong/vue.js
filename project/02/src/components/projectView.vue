@@ -2,7 +2,7 @@
 	<main>
 		<section>
 			<div class="inner-content">
-				<div class="project-thumb fade-in-bottom">
+				<div class="project-thumb fade-in-bottom" v-if="this.propsdata[this.selectedItem].imgSrc!=''">
 					<img v-bind:src="this.propsdata[this.selectedItem].imgSrc" v-bind:alt="this.propsdata[this.selectedItem].title">
 				</div>
 				<div class="project-view">
