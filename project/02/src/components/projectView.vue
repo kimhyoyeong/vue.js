@@ -45,7 +45,7 @@
 						<a v-bind:href="this.propsdata[this.selectedItem].pc" target="_blank" class="button" v-if="this.propsdata[this.selectedItem].pc!=''">PC <i class="fas fa-link"></i></a>
 						<a v-bind:href="this.propsdata[this.selectedItem].mobile" target="_blank" class="button" v-if="this.propsdata[this.selectedItem].mobile!=''">Moblie <i class="fas fa-link"></i></a>
 						<a v-bind:href="this.propsdata[this.selectedItem].responsiveWeb" target="_blank" class="button" v-if="this.propsdata[this.selectedItem].responsiveWeb!=''">반응형 <i class="fas fa-link"></i></a>
-						<a v-bind:href="this.propsdata[this.selectedItem].codeLink" target="_blank" class="button" v-if="this.propsdata[this.selectedItem].codeLink!=''">code view <i class="fas fa-link"></i></a>
+						<a v-bind:href="this.propsdata[this.selectedItem].worksheet" target="_blank" class="button" v-if="this.propsdata[this.selectedItem].worksheet!=''">worksheet <i class="fas fa-link"></i></a>
 					</div>
 					
 				</div>
