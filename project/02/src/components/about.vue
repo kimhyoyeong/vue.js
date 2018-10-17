@@ -6,7 +6,9 @@
 				<h2 class="main-title fade-in-bottom">About me</h2>
 				<div class="description fade-in-bottom">
 					<p>
-						안녕하세요:) 김효영입니다.
+						안녕하세요:) 웹퍼블리셔 김효영입니다.<br>
+						의미에 맞는 HTML 태그를 사용하여 마크업 하는 것을 목표로 하며<br>
+						다양한 환경에서 접근 가능한 웹사이트를 만들기 위해 노력하고 있습니다.<br>
 					</p>
 					
 					<dl class="info-list">

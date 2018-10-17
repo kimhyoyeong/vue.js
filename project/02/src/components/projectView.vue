@@ -36,11 +36,16 @@
 					</div>
 					<div class="description">
 						<dl>
-							<dt>Description</dt>
+							<dt>Summary</dt>
 							<dd v-html="this.propsdata[this.selectedItem].des"></dd>
 						</dl>
 					</div>
-					
+					<div class="description v2">
+						<dl>
+							<dt>Description</dt>
+							<dd v-html="this.propsdata[this.selectedItem].des2"></dd>
+						</dl>
+					</div>
 					<div class="button-box">
 						<a v-bind:href="this.propsdata[this.selectedItem].pc" target="_blank" class="button" v-if="this.propsdata[this.selectedItem].pc!=''">PC <i class="fas fa-link"></i></a>
 						<a v-bind:href="this.propsdata[this.selectedItem].mobile" target="_blank" class="button" v-if="this.propsdata[this.selectedItem].mobile!=''">Moblie <i class="fas fa-link"></i></a>
@@ -50,8 +55,9 @@
 					
 				</div>
 				
-				<a href="#" v-on:click="viewPagePrev()" v-if="this.propsdata[this.selectedItem].id > 0" class="btn-project-prev"><i class="fas fa-chevron-left"></i></a>
-				<a href="#" v-on:click="viewPageNext()" v-if="this.propsdata[this.selectedItem].id < this.propsdata.length-1" class="btn-project-next"><i class="fas fa-chevron-right"></i></a>
+				<a href="#" v-on:click="viewPagePrev()" v-if="this.propsdata[this.selectedItem].id > 0" class="btn-project-prev">이전</a>
+				
+				<a href="#" v-on:click="viewPageNext()" v-if="this.propsdata[this.selectedItem].id < this.propsdata.length-1" class="btn-project-next">다음</a>
 				
 			</div>
 		</section>
@@ -65,12 +71,15 @@
 			content:'';clear:both;display:block;
 		}
 		dt,dd{
-			margin-top:5px;
+			margin-top:8px;
+		}
+		&.v2{
+			font-size:12px;
+			color:#444;
 		}
 	}
 	.info-list{
 		float:left;
-		margin-bottom:5px;
 		dt,dd{
 			display:inline-block;
 			text-align:left;
@@ -113,35 +122,33 @@
 	}
 	
 	[class^='btn-project-']{
-		position:fixed;top:0;
-		height:100%;width:20px;
+		position:fixed;top:50%;
+		transform:translate(0 -50%);
 		padding:0 20px;
-		font-size:30px;
 		color:#000;
 		text-align:center;
-		svg{
-			height:100%;
-			transition:1s;
+		font-size:0;
+		&:after{
+			content:'';
+			display:inline-block;
+			width:20px;height:20px;
+			border: 5px solid #000;
+			border-right-width: 0;
+			border-bottom-width: 0;
+			vertical-align:middle;
+			transform:rotate(135deg);
 		}
 	}
 	.btn-project{
 		&-next{
 			right:0;
-			&:hover{
-				svg{
-					transform:translateX(10px);
-					transition:.5s;
-				}
+			&:after{
 			}
 		}
 		&-prev{
 			left:0;
-			&:hover{
-				svg{
-					transform:translateX(-10px);
-					transition:.5s;
-				}
-				
+			&:after{
+				transform:rotate(-45deg);
 			}
 		}
 	}
@@ -157,22 +164,6 @@
 		}
 		[class^='btn-project-']{
 			padding:0;
-		}
-		.btn-project{
-			&-next{
-				&:hover{
-					svg{
-						transform:translateX(0);
-					}
-				}
-			}
-			&-prev{
-				&:hover{
-					svg{
-						transform:translateX(0);
-					}
-				}
-			}
 		}
 	}
 </style>
