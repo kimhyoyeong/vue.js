@@ -48,9 +48,9 @@
 				
 				<div class="link-box fade-in-bottom">
 					<ul>
-						<li><a href="mailto:kimhyo0089@gmail.com"><i class="fas fa-envelope"></i> kimhyo0089@gmail.com</a></li>
+						<!--<li><a href="mailto:kimhyo0089@gmail.com"><i class="fas fa-envelope"></i> kimhyo0089@gmail.com</a></li>-->
 						<li><a href="https://github.com/kimhyoyeong/" target="_blank"><i class="fab fa-github"></i> https://github.com/kimhyoyeong</a></li>
-						<li><i class="fas fa-phone"></i> 010.5632.2473</li>
+						<!--<li><i class="fas fa-phone"></i> 010.5632.2473</li>-->
 					</ul>
 				</div>
 				
