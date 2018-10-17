@@ -101,7 +101,7 @@
 		box-sizing:border-box;
 		.title{
 			padding:.5rem 0;
-			font-size:2.3rem;
+			font-size:2.1rem;
 			letter-spacing:-1px;
 		}
 	}
@@ -123,33 +123,23 @@
 	
 	[class^='btn-project-']{
 		position:fixed;top:50%;
-		transform:translate(0 -50%);
-		padding:0 20px;
+		width:16px;height:16px;
+		border: 5px solid #000;
+		border-right-width: 0;
+		border-bottom-width: 0;
+		vertical-align:middle;
+		transform:rotate(135deg);
 		color:#000;
 		text-align:center;
 		font-size:0;
-		&:after{
-			content:'';
-			display:inline-block;
-			width:20px;height:20px;
-			border: 5px solid #000;
-			border-right-width: 0;
-			border-bottom-width: 0;
-			vertical-align:middle;
-			transform:rotate(135deg);
-		}
 	}
 	.btn-project{
 		&-next{
-			right:0;
-			&:after{
-			}
+			right:.8rem;
 		}
 		&-prev{
-			left:0;
-			&:after{
-				transform:rotate(-45deg);
-			}
+			left:.8rem;
+			transform:rotate(-45deg);
 		}
 	}
 	
