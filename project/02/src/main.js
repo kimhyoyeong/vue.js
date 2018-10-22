@@ -3,14 +3,14 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import 'typeface-montserrat'
 
-Vue.config.productionTip = false
-Vue.use(VueRouter)
+Vue.config.productionTip = false;
+Vue.use(VueRouter);
 
 // 라우트 컴포넌트 정의
-const home = App.components.Home
-const About = App.components.About
-const Project = App.components.Project
-const ProjectView = App.components.ProjectView
+const home = App.components.Home;
+const About = App.components.About;
+const Project = App.components.Project;
+const ProjectView = App.components.ProjectView;
 
 // 라우트 정의
 const routes = [
